@@ -1,6 +1,6 @@
 const DATA = [
     {
-        email: "admin@admin.com",
+        email: "vignesh12@gmail.com",
         password: "abc123",
         fullname: "Admin Account",
         type: "Savings Peso",
@@ -10,7 +10,7 @@ const DATA = [
         transactions: []
     },
     {
-        email: "jeff@gmail.com",
+        email: "user12@gmail.com",
         password: "abc123",
         fullname: "Jeffrey de Lara",
         type: "Savings Peso",

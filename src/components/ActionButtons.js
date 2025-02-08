@@ -11,7 +11,7 @@ export const ActionButtons = (props) => {
           index={index} 
           actionType="edit"
           editingUser={editingUser} 
-          actionType='edit' 
+          actionTypes='edit' 
           setEditingUser={setEditingUser} setEditModal={setEditModal} />
 
         <ActionButton 
@@ -25,17 +25,17 @@ export const ActionButtons = (props) => {
   }
   
 export const ActionButton = (props) => {
-    const {icon, text, editingUser, actionType, setEditingUser, index, setEditModal, setDeleteUser} = props;
+    const {icon, text, editingUser, actionTypes, setEditingUser, index, setEditModal, setDeleteUser} = props;
 
     const click = (e, index) => {
       e.preventDefault();
       
-      if(actionType === 'edit') {
+      if(actionTypes === 'edit') {
         setEditingUser(index);
         setEditModal(true);
       }
 
-      if(actionType === 'delete') {
+      if(actionTypes === 'delete') {
         setDeleteUser(index);
       }
     }
