@@ -483,7 +483,7 @@ const styles = {
     alignItems: "center",
     minHeight: "100vh",
     backgroundImage: `url("http://localhost:3000/banking-image.avif")`,
-    // backgroundColor: "#a84517",
+    backgroundColor: "#a84517",
   },
   container: {
     // backgroundColor: "#a84517",
