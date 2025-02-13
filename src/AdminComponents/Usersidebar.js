@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import CreateAccount from "./Createacount";
-import Userhome1 from "./userhome1";
+import Userhome1 from "./uerhome1";
 import UserfundTransfer from "./Userfundtrasfor";
 import Userdeposit from "./Userdeposit";
 import Userwithdraw from "./Userwithdraw";

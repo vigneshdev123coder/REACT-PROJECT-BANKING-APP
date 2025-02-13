@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import img from "./Image.png";
-// import bank from "./bank.png";
+import bank from "./bank.png";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -53,10 +53,9 @@ const Login = () => {
   const styles = {
     container: {
       display: "flex",
-      // flexDirection: windowWidth <= 768 ? "column" : "row",
+      flexDirection: windowWidth <= 768 ? "column" : "row",
       height: "100vh",
       position: "relative",
-      
     },
     rightSide: {
       flex: 1,
@@ -65,20 +64,19 @@ const Login = () => {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      // backgroundImage: `url(${bank})`,
-      backgroundImage: `url("http://localhost:3000/banking-image.avif")`,
+      backgroundImage: `url(${bank})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
     },
     form: {
       width:  "160px",
+height:"400px",
       padding:  "40px",
       paddingRight:  "90px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
       borderRadius: "20px",
-      // backgroundColor: "#be7956",
-      backgroundColor:"lightblue"
+      backgroundColor: "#be7956",
     },
     logo: {
       height: windowWidth <= 480 ? "50px" : "80px",
@@ -87,8 +85,9 @@ const Login = () => {
       borderRadius: "50%",
     },
     title: {
-      textAlign: "center",
-      marginBottom: "20px",
+      // textAlign: "center",
+      width:"110px",
+      marginBottom: "10px",
       color: "white",
     },
     label: {
@@ -134,8 +133,7 @@ const Login = () => {
       <div style={styles.rightSide}>
         <form onSubmit={handleLogin} style={styles.form}>
           <img src={img} alt="Bank Logo" style={styles.logo} />
-          <h1 style={styles.title}> CANARA BANK</h1>
-          <span style={{fontSize:"30px", textAlign:"center"}}>admin login</span>
+          <h1 style={styles.title}>CANARA BANK</h1>
           {message && (
             <p
               style={{
@@ -146,7 +144,6 @@ const Login = () => {
             >
               {message}
             </p>
-            // <h1>admin login</h1>
           )}
           <label htmlFor="username" style={styles.label}>
             USER NAME

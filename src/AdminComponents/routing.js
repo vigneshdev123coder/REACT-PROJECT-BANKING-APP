@@ -5,16 +5,14 @@ import Logout from "./Logout";
 import Admin from "./admin";
 import Loginuser from "./Loginuser";
 import Usersidebar from "./Usersidebar";
-import Userhome1 from "./userhome1";
+import Userhome1 from "./uerhome1";
 import CreateAccount from "./Createacount";
-import Sidebar from "./sidebar";
 
 const Main = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Admin />} />
-        <Route path="/Saidbar" element={<Sidebar/>}/>
         <Route path="/login" element={<Login />} /> 
         <Route path="/home" element={<Home />} /> 
         <Route path="/admin" element={<Logout />} /> 
