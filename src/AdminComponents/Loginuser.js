@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import user from "./user1.png";
-import bank from "./bank.png";
+import bank from "./banking-image.png";
 
 const LoginUser = () => {
   const [username, setUsername] = useState("");

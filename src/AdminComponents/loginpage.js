@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import img from "./Image.png";
-import bank from "./bank.png";
+import bank from "./banking-image.png";
+
 
 const Login = () => {
   const [username, setUsername] = useState("");
